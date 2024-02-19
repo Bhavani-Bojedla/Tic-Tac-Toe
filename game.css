@@ -1,12 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+  
+    
 }
 
+h1{
+    text-shadow: 0 0 3px black, 0 0 20px #FF0000;
+}
 body {
-    background-color: rgb(26, 25, 25);
-    color: aqua;
+    
+    color: red;   
+    font-size: x-large;
     text-align: center;
+   margin-top: 5vh;
+   background-image:url(p1.jpg) ;
+   background-size: cover;
 }
 
 .msg {
@@ -18,8 +27,9 @@ body {
     margin-top: 4vh;
     height: 3vh;
     color: aqua;
+    font-size: 2.5vmin;
     border: none;
-    background-color: rgb(26, 25, 25);
+    /* background-color: rgb(26, 25, 25); */
     justify-content: center;
     align-items: center;
 }
@@ -42,25 +52,26 @@ body {
 }
 
 .container {
-    height: 70vh;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .game {
-    height: 60vmin;
-    width: 60vmin;
+    height: 400px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5vmin;
+    gap: 7px;
 }
 
 .box {
-    height: 18vh;
-    width: 18vh;
+    height: 120px;
+    width: 120px;
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(255, 0, 0, 0.8);
@@ -69,14 +80,18 @@ body {
     color: red;
 }
 
+
+
 .btn {
     padding: 0.7rem;
     border-radius: 0.7rem;
     border-style: solid;
     background-color: aqua;
     font-size: medium;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
 }
 
 .hide {
     display: none;
 }
+
