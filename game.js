@@ -15,27 +15,44 @@ boxes.forEach((box) => {
       box.innerText = "X";
       Btn1.innerText = "Its time for player B !!!";
       curr = "B";
+      box.style.color="blue";
     }
-    else {
+    else{
       box.innerText = "O";
       Btn1.innerText = "Its time for player A !!!";
-      curr = "A";
+     curr = "A";
     }
+    
     box.disabled = true;
     checkWinner();
   }
   );
-
 })
 
 const showWinner = (winner) => {
   msg.innerText = "Congratulations," + winner + " won the game!!";
   msgCont.classList.remove("hide");
   boxes.forEach((box) => {
-    box.disabled = true;
+    box.disabled = true;  
+      
   })
-
+  
 }
+
+// const checkWinner = () => {
+//   for (let pattern of WinPatterns) {
+//     let pos1 = boxes[pattern[0]].innerText;
+//     let pos2 = boxes[pattern[1]].innerText;
+//     let pos3 = boxes[pattern[2]].innerText;
+//     if (pos1 !== "" && pos2 !== "" && pos3 !== "") {
+//       if (pos1 == pos2 && pos2 == pos3 && pos3 == pos1) {
+//         console.log("won", pos1);
+//         showWinner(pos1);
+//       }
+//     }
+//   }
+
+// }
 
 const checkWinner = () => {
   let winnerFound = false;
@@ -68,7 +85,6 @@ const checkWinner = () => {
     }
   }
 }
-
 btn.onclick = () => {
   boxes.forEach((box) => {
     box.innerText = "";
@@ -83,7 +99,3 @@ newbtn2.onclick = () => {
     box.disabled = false;
   })
 }
-
-
-
-
